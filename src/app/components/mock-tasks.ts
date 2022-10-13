@@ -4,7 +4,7 @@ import { Task } from './task';
 export const TASKS: Task[] = [
   {
     id: 1,
-    text: 'Terminar primer modulo de Angular',
+    text: 'Terminar primer módulo de Angular',
     day: 'Octubre 15 a las 12:00',
     reminder: true,
   },
