@@ -1,6 +1,11 @@
-<app-task-item *ngFor="let tasksList of tasks" [taskItem]="tasksList">
+<app-task-item
+  *ngFor="let tasksList of tasks"
+  [taskItem]="tasksList"
+  (onDeleteTask)="deleteTask(tasksList)"
+>
 </app-task-item>
 <!-- id?: number;
   text: string;
   day: string;
   reminder: boolean; -->
+<!-- (onDeleteTask)="deleteTask(tasksList)" -->
