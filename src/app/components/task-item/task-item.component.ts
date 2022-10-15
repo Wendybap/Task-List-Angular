@@ -3,6 +3,8 @@ import { Task } from '../task';
 import { TASKS } from '../mock-tasks';
 import { faTimes } from '@fortawesome/free-solid-svg-icons';
 
+// !COMPONENTE HIJO de app-task
+
 @Component({
   selector: 'app-task-item',
   templateUrl: './task-item.component.html',
