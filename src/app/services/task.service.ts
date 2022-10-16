@@ -2,7 +2,6 @@ import { Injectable } from '@angular/core';
 import { Observable, of } from 'rxjs';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Task } from '../components/task';
-import { TASKS } from '../components/mock-tasks';
 
 // TODO: ESTE SERVICIO SE ENCARGARA DE CREAR, EDITAR Y BORRAR LAS TAREAS
 

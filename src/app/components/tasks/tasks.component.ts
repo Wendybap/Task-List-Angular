@@ -20,7 +20,7 @@ export class TasksComponent implements OnInit {
     });
   }
 
-  // TODO: Metodo para ELIMINAR UN ITEM creado por el PADRE de task-item haciendo uso del servicio porque
+  // TODO: Método para ELIMINAR UN ITEM creado por el PADRE de task-item haciendo uso del servicio porque
   // TODO: hay es donde se creo verdaderamente la funcionalidad de borrar la tarea y es recibido
   // TODO: por el task.html
   deleteTask(tasksList: Task) {
@@ -36,7 +36,7 @@ export class TasksComponent implements OnInit {
     this.taskService.updateTaskReminder(tasksList).subscribe();
   }
 
-  // TODO: Método que recibe el servivio para crear las tareas
+  // TODO: Método que recibe el servicio para crear las tareas
   addTask(tasksList: Task) {
     this.taskService.addTask(tasksList).subscribe((tasksList) => {
       this.tasks.push(tasksList);

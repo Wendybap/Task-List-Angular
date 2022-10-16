@@ -1,6 +1,6 @@
 <!-- TODO:componente HIJO del templete task.component.html -->
 <!-- formulario para agregar tareas -->
-<form class="add-form" (ngSubmit)="onSubmit()">
+<form class="add-form" (ngSubmit)="onSubmit()" *ngIf="showAddTask">
   <div class="form-control">
     <label for="text">Task</label>
     <input
