@@ -1,4 +1,10 @@
-<div class="task">
+<!-- !TEMPLETE HIJO DE app-task-->
+<!-- !el método onDelete(taskList) lo creo en task-item.ts  -->
+<div
+  class="task"
+  [ngClass]="{ reminder: taskItem.reminder }"
+  (click)="onToggle(taskItem)"
+>
   <h3>
     {{ taskItem.text }}
     <fa-icon

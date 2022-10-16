@@ -1,0 +1,36 @@
+<!-- TODO:componente HIJO del templete task.component.html -->
+<!-- formulario para agregar tareas -->
+<form class="add-form" (ngSubmit)="onSubmit()">
+  <div class="form-control">
+    <label for="text">Task</label>
+    <input
+      type="text"
+      name="text"
+      id="text"
+      placeholder="Add Task Text"
+      [(ngModel)]="text"
+    />
+  </div>
+
+  <div class="form-control">
+    <label for="day">Day & Time</label>
+    <input
+      type="text"
+      name="day"
+      id="day"
+      placeholder="Add Day & Time"
+      [(ngModel)]="day"
+    />
+  </div>
+
+  <div class="form-control form-control-check">
+    <label for="text">Reminder</label>
+    <input type="checkbox" name="reminder" id="remindery" />
+  </div>
+  <input
+    type="submit"
+    value="Save Task"
+    class="btn btn-block"
+    [(ngModel)]="reminder"
+  />
+</form>

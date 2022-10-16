@@ -4,7 +4,7 @@
       "id": 1,
       "text": "Terminar primer módulo de Angular",
       "day": "Octubre 15 a las 12:00",
-      "reminder": true
+      "reminder": false
     },
     {
       "id": 2,
@@ -28,7 +28,7 @@
       "id": 5,
       "text": "Practica continua",
       "day": "Noviembre 16 a las 12:00",
-      "reminder": true
+      "reminder": false
     }
   ]
 }

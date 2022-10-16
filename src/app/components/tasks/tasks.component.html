@@ -1,11 +1,10 @@
+<!-- TODO: TEMPLETE PADRE DE app-task-item y app-add-task -->
+<!-- TODO: el onDeleteTask es la funcion que le pasa el padre al hijo -->
+<app-add-task (OnAddTask)="addTask($event)"></app-add-task>
 <app-task-item
   *ngFor="let tasksList of tasks"
   [taskItem]="tasksList"
   (onDeleteTask)="deleteTask(tasksList)"
+  (onToggleReminder)="onToggleReminder(tasksList)"
 >
 </app-task-item>
-<!-- id?: number;
-  text: string;
-  day: string;
-  reminder: boolean; -->
-<!-- (onDeleteTask)="deleteTask(tasksList)" -->
